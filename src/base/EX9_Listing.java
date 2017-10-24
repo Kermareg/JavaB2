@@ -1,5 +1,5 @@
+package base;
 import java.io.File;
-import java.io.IOException;
 
 /**
  * Listing d'un dossier et déduction de la taille des différents fichiers qui le compose.
@@ -7,7 +7,7 @@ import java.io.IOException;
  * @version 1
  *
  */
-public class EX8_Listing {
+public class EX9_Listing {
 
 	/**
 	 * Listing simple 
