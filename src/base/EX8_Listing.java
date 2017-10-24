@@ -7,7 +7,7 @@ import java.io.IOException;
  * @version 1
  *
  */
-public class ListingFichier {
+public class EX8_Listing {
 
 	/**
 	 * Listing simple 
