@@ -22,6 +22,8 @@ public class EX6_AdditionMultiples {
 			}
 			System.out.println("\tSomme totale : " + somme);
 		}while(!saisie.equals("q"));
+		
+		System.exit(0);
 
 	}
 
