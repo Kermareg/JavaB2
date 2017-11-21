@@ -18,11 +18,21 @@ Dans le dossier du workspace : ```git clone https://github.com/Kermareg/JavaB2.g
 Un ls/dir montrera qu'il y a un second répertoire (JavaB2) présent.
 
 ## Import dans Eclipse
+### Mode barbare
 * Clic droit dans l'arborescence de projet : "Import"
 * Sous l'onglet Général : Existing Project into Workspace > NEXT
   * Sélection de la root directory : JavaB2
   * Le projet est normalement visible sous le navigateur de projet. 
   * Finish, le projet est importé.
+  
+### Mode  GIT
+Avec les nouvelles versions d'eclipse, il est possible d'importer directement le dépot dans votre workspace.
+* Clic droit sur l'arborescence des projets
+  * Import
+  * GIT
+  * Clone URi
+Rentrer dans la barre d'adresse l'adresse du dépôt git à cloner. Les autres champs se complètent automatiquement. Il ne faut rien modifier d'autre. L'importation devrait se faire sans problèmes.
+ 
 
 ## Mise à jour du JRE *si nécessaire*
 
@@ -37,4 +47,15 @@ Pour corriger ce problème :
   * Sélectionner ```JRE System Library```
   * Sélectionner Execution Library et sélectionner la plus haute version de votre ordinateur. Dans mon cas : ```JavaSE-1.7```
 * FINISH
+
+# Installation de GIT
+## Client GIT
+* Aller sur le site de [GIT-SCM](https://git-scm.com/downloads) et télécharger le client propre à votre achitecture
+* Installer le client avec les options par défaut
+
+Deux options s e sont ajoutées au menu contextuel : 
+* `git bash`
+* `git gui`
+git bash permet d’ouvrir la console GIT où des commande à la bash sont utilisées. 
+
 
