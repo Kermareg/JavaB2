@@ -1,24 +1,39 @@
 package exemples;
 
+/**
+ * Exemple d'héritage de la class Thread avec utilisation des
+ * constructeurs de la superclass.
+ * @author Bertrand
+ *
+ */
 public class ThreadReecrit extends Thread
 {
 	private int compteur;
-	//private String name;
+	
+	/**
+	 * Constructeur demandant un nom de thread
+	 * @param threadName
+	 */
 	public ThreadReecrit(String threadName)
 	{
 		super(threadName);
-		//name=threadName;
 		compteur = 0;
 	}
 	
-
+	/**
+	 * Constructeur prenant un nom et un compteur initial.
+	 * @param threadName
+	 * @param compteurInit
+	 */
 	public ThreadReecrit(String threadName, int compteurInit)
 	{
-		//name=threadName;
 		super(threadName);
 		compteur = compteurInit;
 	}
 	
+	/**
+	 * Méthode provenant de Thread contenant le code "qui prend du temps".
+	 */
 	public void run()
 	{
 		try 
@@ -37,12 +52,18 @@ public class ThreadReecrit extends Thread
 	}
 	
 	
-	
+	/**
+	 * Lancement de 10 threads pour exécution simultanée.
+	 * @param args
+	 */
 	public static void main(String[] args) 
 	{
 		for(int i=0;i<10;i++)
 		{
+			// Création d'un thread
 			ThreadReecrit thread = new ThreadReecrit("Thread n°" + i);
+			
+			//Lancement de l'exécution
 			thread.start();
 		}
 	}
