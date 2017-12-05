@@ -4,7 +4,7 @@ public class Etudiant extends Personne {
 	protected String matricule;
 
 	public Etudiant(String n, String p) {
-		super();
+		super(n,p);
 		matricule = "Non défini";
 		System.out.println("Création d'un étudiant : " + n);
 	}
@@ -20,5 +20,12 @@ public class Etudiant extends Personne {
 		super.affiche();
 		System.out.println("\tMatricule : " + matricule);
 	}
+
+	@Override
+	public String toString() {
+		return "Etudiant [matricule=" + matricule + ", getNom()=" + getNom() + ", getPrenom()=" + getPrenom() + "]";
+	}
+	
+	
 
 }
